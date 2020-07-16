@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> DAY-2 JS ASSIGNMENT </title>
+    </head>
+    <body>
+        <h1>Methods in strings.</h1>
+        <p>Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).But with JavaScript,
+         methods and properties are also available to primitive values, because JavaScript treats primitive values as objects 
+         when executing methods and properties.</p>
+         <h2><u>1.searching a string in a string.</u></h2>
+         <p>The search() method searches a string for a specified value and returns the position of the match.</p>
+         <h2><u>2.extracting string parts.</u></h2>
+         <p>There are three methods for extracting a part of a string.</p>
+              <h2>2.1 The slice method.</h2>
+         <p>The slice() Method extracts a part of a string and returns the extracted part in a new string.
+            The method takes 2 parameters: the start position, and the end position (end not included).
+            example code : var str = "Apple, Banana, Kiwi";
+                           var res = str.slice(7, 13);
+            If a parameter is negative, the position is counted from the end of the string.
+            example code: var str = "Apple, Banana, Kiwi";
+                          var res = str.slice(-12, -6);
+            If you omit the second parameter, the method will slice out the rest of the string
+            example code : var res = str.slice(7);</p>
+              <h2>2.2 The substring() Method.</h2>
+              <p> substring() is similar to slice().                
+                The difference is that substring() cannot accept negative indexes.
+                example code : var str = "Apple, Banana, Kiwi";
+                               var res = str.substring(7, 13);</p>
+             <h2>2.3 The substr() Method</h2>
+                  <p> substr() is similar to slice().                              
+                     The difference is that the second parameter specifies the length of the extracted part.</p>
+      <h2>3. Replacing String Content</h2>
+                  <p> The replace() method replaces a specified value with another value in a string </p>
+     <script>
+         //searching a string in a string.
+         var str = "Please locate where 'locate' occurs!";
+         var pos = str.search("locate");
+         //extracting string (slice)
+         var str1 = "Apple, Banana, Kiwi";
+         var res = str1.slice(7, 13);
+         //replacing a string content.
+         str2 = "Please visit Microsoft!";
+         var n = str2.replace("Microsoft", "W3Schools");
+
+     </script>   
+    </body>
+</html>
